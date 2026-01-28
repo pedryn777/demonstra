@@ -1,0 +1,172 @@
+:root {
+  --azul: #0b3c6f;
+  --azul-claro: #f2f6fb;
+  --texto: #1f2937;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--texto);
+  background: #ffffff;
+}
+
+/* ANIMAÇÃO BASE */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.9s ease;
+}
+.reveal.active {
+  opacity: 1;
+  transform: none;
+}
+
+/* HERO */
+.hero {
+  padding: 50px 20px;
+  background: var(--azul-claro);
+}
+
+.hero-content h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 38px;
+  line-height: 1.1;
+}
+
+.hero-content h1 span {
+  color: var(--azul);
+}
+
+.hero-content p {
+  margin: 25px 0;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.hero-image img {
+  width: 100%;
+  margin-top: 30px;
+  border-radius: 20px;
+}
+
+/* BOTÕES */
+.btn {
+  display: inline-block;
+  padding: 16px 26px;
+  background: var(--azul);
+  color: white;
+  border-radius: 40px;
+  text-decoration: none;
+  font-size: 16px;
+}
+.btn.dark {
+  background: #0f172a;
+}
+
+/* SOBRE */
+.sobre {
+  padding: 70px 20px;
+  text-align: center;
+}
+
+.sobre h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+  margin-bottom: 25px;
+}
+
+.sobre img {
+  width: 200px;
+  border-radius: 100px;
+  margin: 20px auto;
+}
+
+.sobre p {
+  font-size: 16px;
+  line-height: 1.9;
+  margin-bottom: 18px;
+}
+
+.local {
+  font-weight: 500;
+  color: var(--azul);
+}
+
+/* AUTORIDADE */
+.autoridade {
+  padding: 70px 20px;
+  background: var(--azul);
+  color: white;
+}
+
+.autoridade img {
+  width: 100%;
+  border-radius: 20px;
+  margin-bottom: 25px;
+}
+
+.autoridade h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.autoridade p {
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+/* CTA */
+.cta {
+  padding: 70px 20px;
+  text-align: center;
+}
+
+.cta h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+}
+
+.cta p {
+  margin: 20px 0;
+  font-size: 16px;
+}
+
+/* FOOTER */
+footer {
+  padding: 30px;
+  text-align: center;
+  font-size: 14px;
+  color: #64748b;
+}
+
+/* DESKTOP */
+@media (min-width: 900px) {
+  .hero {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    padding: 90px 10%;
+  }
+
+  .hero-image img {
+    margin-top: 0;
+  }
+
+  .sobre, .cta {
+    padding: 120px 20%;
+  }
+
+  .autoridade {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    padding: 120px 10%;
+  }
+}
